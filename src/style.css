@@ -1,0 +1,61 @@
+/* ============================================================
+   THEME: "Warm Dossier" — editorial light theme
+   Font links live in index.html <head>.
+   ============================================================ */
+
+:root {
+  /* surfaces */
+  --bg: #f4efe6;
+  --bg-2: #ece4d4;
+  --card: #fffdf8;
+  --ink: #171310;
+
+  /* text */
+  --ink-soft: #4a4238;
+  --muted: #8a7f70;
+
+  /* linework */
+  --line: rgba(23, 19, 16, 0.12);
+  --line-strong: rgba(23, 19, 16, 0.28);
+
+  /* accents */
+  --accent: #e8500a;
+  --accent-dark: #c73f02;
+  --accent-2: #f59e0b;
+  --accent-3: #e11d48;
+
+  /* elevation */
+  --shadow: 0 24px 60px rgba(23, 19, 16, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(rgba(23, 19, 16, 0.05) 1px, transparent 1px);
+  background-size: 26px 26px;
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--accent); color: #fff; }
+
+a { color: inherit; text-decoration: none; }
+
+.mono-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
